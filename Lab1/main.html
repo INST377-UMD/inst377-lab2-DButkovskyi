@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danyil's Best Website</title>
+</head>
+<body>
+    <header>
+        <h1>GREETINGS!!!! <br/> I am happy to have you here!</h1>
+    </header>
+    
+    <h2>About Me</h2>
+    <p>Here is an image of something I like:</p>
+    <img src="https://i.pinimg.com/736x/a0/dd/27/a0dd27da64471ac84ad1c66e7e68b4e6.jpg" alt="I like rasberries" width="300">
+    
+    <h3>My Interests</h3>
+    <ul>
+        <li>Computer Vision</li>
+        <li>Homelab</li>
+        <li>Traveling</li>
+        <li>Photography</li>
+        <li>My Etsy store</li>
+        <li>Snowboarding</li>
+    </ul>
+    
+    <h3>My Favorite Websites</h3>
+    <ol>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://planetarycomputer.microsoft.com/" target="_blank">Planetary Computer for cool Geospatial data</a></li>
+        <li><a href="https://huggingface.co/" target="_blank">Hugging Face for cool NLP models</a></li>
+    </ol>
+    
+    <h3>My Schedule</h3>
+    <table border="1" style="border-collapse: collapse; width: 100%;">
+        <thead style="background-color: #f2f2f2;">
+            <tr>
+                <th style="padding: 10px; text-align: left;">Day</th>
+                <th style="padding: 10px; text-align: left;">Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px;">Monday</td>
+                <td style="padding: 10px;">Reviewing other people's code trying to figure what they did and if it is ok to merge aka Work</td>
+            </tr>
+            <tr style="background-color: #f9f9f9;"></tr>
+                <td style="padding: 10px;">Tuesday</td>
+                <td style="padding: 10px;">School (not favorite lectures)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Wednesday</td>
+                <td style="padding: 10px;">Best part of work (actually developing)</td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+                <td style="padding: 10px;">Thursday</td>
+                <td style="padding: 10px;">More school (pretty good lectures)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Friday</td>
+                <td style="padding: 10px;">Pretty good labs</td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+                <td style="padding: 10px;">Saturday</td>
+                <td style="padding: 10px;">Hobby day</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Sunday</td>
+                <td style="padding: 10px;">Homework day</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p>Here is a fun random emoji:</p>
+    <p id="emoji">😊</p>
+
+    <script>
+        const emojis = ['😊', '😂', '😍', '🤔', '😎', '😢', '😡', '🤗', '😴', '😇', '😜', '😈', '🤡', '🤠', '🤖', '👽', '👾', '🤓'];
+        function changeEmoji() {
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+            document.getElementById('emoji').textContent = randomEmoji;
+        }
+        setInterval(changeEmoji, 5000);
+    </script>
+    <p style="background-color: rgb(150, 150, 139); font-size: 1.5em;">Please meet my friend Bob.</p>
+    <pre style="font-family: monospace; background-color: #f0f0f0; padding: 10px; font-size: 2em;">
+        <span style="color: red;">________</span>
+        <span style="color: green;">/        \</span>
+        <span style="color: blue;">|  () ()  |</span>
+        <span style="color: orange;">\   ^   /</span>
+        <span style="color: purple;">  |||||</span>
+        <span style="color: brown;">  |||||</span>
+    </pre>
+    
+    <blockquote>
+        "All animals are equal, but some animals are more equal than others." - George Orwell, Animal Farm
+    </blockquote>
+</body>
+</html>
